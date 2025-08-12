@@ -1,2 +1,0 @@
-tractusx-sdk==0.4.1
-basyx-python-sdk==1.2.1
