@@ -52,8 +52,12 @@ def start_connector_service():
             "edc.controlplane.managementpath"
         )
 
+    dataspace_version = ConfigManager.get_config(
+        "edc.controlplane.dataspace.version"
+    )
+
     connector_service = ServiceFactory.get_connector_provider_service(
-        dataspace_version="jupiter",
+        dataspace_version=dataspace_version,
         base_url=edc_controlplane_hostname,
         dma_path=edc_controlplane_management_api,
         headers=edc_headers,

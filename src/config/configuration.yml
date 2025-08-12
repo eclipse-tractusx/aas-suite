@@ -30,6 +30,8 @@ authorization:
     value: <<example>>
 
 edc:
+  dataspace:
+    version: "jupiter"
   controlplane:
     hostname: https://edc-provider.url
     apikeyheader: X-Api-Key
